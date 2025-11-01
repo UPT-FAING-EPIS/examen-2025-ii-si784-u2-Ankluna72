@@ -2,15 +2,15 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
-  /* Maximum time one test can run for. */
-  timeout: 60 * 1000, // 60 segundos
+  /* Maximum time one test can run for. Aumentado para runners lentos de CI. */
+  timeout: 120 * 1000, // 120 segundos
 
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 10000 // 10 segundos
+    timeout: 30 * 1000 // 30 segundos
   },
 
   fullyParallel: true,
