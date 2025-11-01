@@ -42,7 +42,7 @@ Se ha utilizado **Playwright** como framework para la automatización de pruebas
 #### 3. Ejecución Multi-navegador y Grabación de Video
 
 - El archivo de configuración `playwright.config.js` está definido para ejecutar las pruebas en dos navegadores distintos: **Chromium (Chrome)** y **Firefox**.
-- La opción `video: 'on'` ha sido habilitada para **grabar un video** de cada ejecución de prueba.
+- La opción `video: 'on'`  ha sido habilitada para **grabar un video** de cada ejecución de prueba.
 
 ### ¿Cómo ver los resultados?
 
